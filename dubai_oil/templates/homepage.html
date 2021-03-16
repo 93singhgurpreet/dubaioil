@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>HomePage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color:#ecdfd8 ;
+  }
+  h2{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+  p {
+    font-size: 15px;
+    font-family: "Trirong", serif;
+    
+  }
+  h4{
+    font-family: 'Balsamiq Sans', cursive;
+
+  }
+ 
+
+  .first-txt { 
+            position: absolute; 
+            top: 100px; 
+            right: 170px; 
+            color: rgb(37, 32, 32);
+           font-family: sans-serif;
+            font-size:50px;
+        } 
+
+        .first-txt1 { 
+            position: absolute; 
+            top: 135px; 
+            right: 170px; 
+            color: rgb(240, 206, 15);
+            font-family: 'Roboto', sans-serif;
+            font-size:75px;
+        } 
+        .first-txt2 { 
+            position: absolute; 
+            top: 240px; 
+            right: 170px; 
+            color: rgb(37, 32, 32);
+            font-size: 35px;
+            font-family:  sans-serif;
+        } 
+        .first-txt3 { 
+            position: absolute; 
+            top: 220px; 
+            right: 80px; 
+            color: rgb(37, 32, 32);
+            font-size:40px;
+            font-family: 'Roboto', sans-serif;
+        } 
+        .first-txt4 { 
+            position: absolute; 
+            top: 260px; 
+            right: 80px;
+            color: rgb(240, 206, 15);
+            font-family: 'Roboto', sans-serif;
+            font-size:75px;
+        } 
+        .img1{
+          position: absolute; 
+          top: 370px; 
+          left: 40px;
+        }
+        .forth-text{ 
+            position: absolute; 
+            top: 120px; 
+            right: 120px;
+            color: red;
+            font-family:  'Roboto', sans-serif;
+            font-size:30px;
+        } 
+        .forth-text1{ 
+            position: absolute; 
+            top: 140px; 
+            right: 120px;
+            color: red;
+            font-family:  'Roboto', sans-serif;
+            font-size:50px;
+        } 
+        .forth-text2{ 
+            position: absolute; 
+            top: 190px; 
+            right: 120px;
+            color: red;
+            font-family:  'Roboto', sans-serif;
+            font-size:40px;
+        } 
+       
+</style>
+</head>
+<body>
+    <div class="container-fluid"  style="padding: 0px;">
+       <div class="row"> 
+          <div class="col-xs-12" id="b1"> 
+                <img src="{% static '/media/new_pis.jpeg' %}" alt="company logo"  width=100%>
+                
+                <p class="first-txt">Use</p>
+                <h2 class="first-txt1">CASTLO</h2>
+                <p class="first-txt2">Make more life to</p>
+                <p class="first-txt3"><b>your</b></p>
+                <h2 class="first-txt4">ENGINE</h2>
+
+                
+               
+          </div>     
+       </div>
+    </div>
+   
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'AL' %}">Automotive Lubricants</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'AT' %}">Automatic Transmission Fluid</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Moter Hyony</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'COOLANT' %}">Coolant</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'HDB' %}">Brake Fluid</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'CU' %}">Pump & Glas cleaner</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="page1.html">Flushing Oil</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'HO' %}">Hydrulic Oil</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Grease</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Indusitrys Lubricants</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'MSO' %}">MARINE Lubricants</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'CO' %}">Compressor Oil</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'CU' %}">Cutting Oil</a></li> 
+                           
+            </ul>
+        </li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Carrier</a></li>
+          <li><a href="#">Contacts</a></li>
+         
+        </ul>
+
+      </div>
+    </nav>
+    
+    <div class="container">
+    <img class="img1" src="{% static '/media/Castol (5)_page-0001.jpg' %}" height="90" width="250" alt="">
+  </div>
+    <br><br>
+    
+    
+   
+
+      <div class="container" style="background-color:#C5EDF0">
+        <div class="row">
+          <div class="col-sm-8">
+            <img src="{% static '/media/map.jpeg' %}" width=100% class="img-fluid" alt="Girl in a jacket">
+          </div>
+          <div class="col-sm-4" >
+            <h4 class="forth-text">We</h4>
+            <h2 class="forth-text1">EXPORT</h2>
+            <h2 class="forth-text2">World Wide</h2>
+          </div>
+        </div>
+      </div>
+         
+      <div class="container" >
+        <div class="row">
+          <div class="col-xs-4"><h2>About Us</h2>
+            <a href="{% url 'AboutUs' %}"><img src="{% static '/media/p3.jpeg' %}" width="360" height="200" alt=""></a>
+            </div>
+
+          <div class="col-xs-4">
+            <h2>Our Mission</h2>
+            <a href="{% url 'OurMission' %}"><img src="{% static '/media/p2.jpeg' %}" width="360" height="200" alt=""></a>
+          </div>
+
+          <div class="col-xs-4">
+            <h2>SALES DEPARTMENT</h2>
+            <a href="{% url 'Sales' %}"><img src="{% static '/media/p1.jpeg' %}" width="360" height="200" alt=""></a>
+            
+          </div>
+        </div>
+      </div><br>
+      <!-- Footer -->
+     
+<footer class="page-footer font-small unique-color-dark" style="background-color:black;color:blanchedalmond">
+
+  <!-- Footer Links -->
+  <br>
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-3">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold">AH BAILARAS</h4>
+       
+        <P>The BAILARAS range of products has been designed and manufactured to specifically meet the needs of its customers and continues to protect and prolong the life of your equipment.</P>
+      </div>
+      
+      <!-- Grid column -->
+
+    
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3">
+
+        <!-- Links -->
+        <h4 class="text-uppercase font-weight-bold">quick link</h4>
+        
+        <p>
+          <a href="{% url 'index' %}">Home</a>
+        </p>
+        <p>
+          <a href="{% url 'AboutUs' %}">About Us</a>
+        </p>
+        <p>
+          <a href="#!">News</a>
+        </p>
+        <p>
+          <a href="#!">Career</a>
+        </p>
+        
+        
+      </div>
+      
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3">
+
+        <!-- Links -->
+        <h4 class="text-uppercase font-weight-bold">Get In Touch</h4>
+       
+        <p>
+          <i class="fas fa-home mr-3"></i> Ajman Industrail Area<br>Ajman-U.A.E</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>Email: H529283062@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>Tel: +971 52 928 3062</p>
+        
+
+      </div>
+      <div class="col-lg-3">
+        <h4 class="text-uppercase font-weight-bold">meet us</h4>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.9440376037214!2d55.498723314608036!3d25.373191983814674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDIyJzIzLjUiTiA1NcKwMzAnMDMuMyJF!5e0!3m2!1sen!2sin!4v1610789830256!5m2!1sen!2sin" width=100% height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+       
+        <!--The div element for the map -->
+        
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  
+<br>
+</footer>
+<!-- Footer -->
+    
+
+</body>
+</html>
