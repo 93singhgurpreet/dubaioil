@@ -28,7 +28,9 @@ SECRET_KEY = 'n56t+&-k2v32upcb5uwdx20&ax!9z+sftepp!u*pyn&fzm526+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'dubai-oil.herokuapp.com'
+]
 
 
 # Application definition
