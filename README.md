@@ -1,2 +1,0 @@
-# dubai-oil
-# new-oil
