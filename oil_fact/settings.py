@@ -29,7 +29,7 @@ SECRET_KEY = 'n56t+&-k2v32upcb5uwdx20&ax!9z+sftepp!u*pyn&fzm526+'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'new-oil.herokuapp.com/'
+    'new-oil.herokuapp.com'
 ]
 
 
