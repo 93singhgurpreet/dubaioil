@@ -26,10 +26,10 @@ MEDIA_DIR = os.path.join(BASE_DIR,'media')
 SECRET_KEY = 'n56t+&-k2v32upcb5uwdx20&ax!9z+sftepp!u*pyn&fzm526+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://dubai-oil.herokuapp.com/'
+    'new-oil.herokuapp.com/'
 ]
 
 
